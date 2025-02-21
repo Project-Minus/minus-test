@@ -1,11 +1,11 @@
 import { ReactNode, useEffect, useMemo, useState } from "react";
-import Snackbar from "./SnackBar";
 import {
   SnackbarConfigType,
   SnackbarStatusType,
 } from "../../types/snackbarType";
 import { convertCloseTime } from "../../utils/convertCloseTime";
 import { SNCMBAR_DEFAULT_STYLE } from "../../utils/snackbarDefaultStyle";
+import Snackbar from "./Snackbar";
 
 interface SnackbarItem {
   id: number;
