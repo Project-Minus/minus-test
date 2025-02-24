@@ -1,6 +1,6 @@
 {
   "name": "@minus-check/core",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -8,24 +8,26 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
+      "require": "./dist/index.umd.cjs",
+      "styles": "./dist/index.css"
     }
   },
-  
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build"
   },
-    "peerDependencies": {
+  "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "dependencies": {
-    "@minus-check/styles": "0.0.8",
-    "@minus-check/types": "0.0.8",
-    "@minus-check/components": "0.0.8"
+    "@minus-check/styles": "0.0.9",
+    "@minus-check/types": "0.0.9",
+    "@minus-check/components": "0.0.9"
   },
-    "publishConfig":{
+  "publishConfig": {
     "access": "public"
   }
 }

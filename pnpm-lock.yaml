@@ -82,20 +82,32 @@ importers:
   packages/components:
     dependencies:
       '@minus-check/types':
-        specifier: 0.0.6
-        version: 0.0.6
+        specifier: 0.0.8
+        version: 0.0.8
+      react:
+        specifier: ^18.0.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.3.1(react@18.3.1)
 
   packages/core:
     dependencies:
       '@minus-check/components':
-        specifier: 0.0.6
-        version: 0.0.6
+        specifier: 0.0.8
+        version: 0.0.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@minus-check/styles':
-        specifier: 0.0.6
-        version: 0.0.6
+        specifier: 0.0.8
+        version: 0.0.8
       '@minus-check/types':
-        specifier: 0.0.6
-        version: 0.0.6
+        specifier: 0.0.8
+        version: 0.0.8
+      react:
+        specifier: ^18.0.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.3.1(react@18.3.1)
 
   packages/styles: {}
 
@@ -421,14 +433,17 @@ packages:
   '@microsoft/tsdoc@0.15.1':
     resolution: {integrity: sha512-4aErSrCR/On/e5G2hDP0wjooqDdauzEbIq8hIkIe5pXV0rtWJZvdCEKL0ykZxex+IxIwBp0eGeV48hQN07dXtw==}
 
-  '@minus-check/components@0.0.6':
-    resolution: {integrity: sha512-s043jTIr7/+i+lqv+assxWFdqL7cKbvbdcPc8hvY65fIUBW/WT955vHF8+r+65N9iCfPEOAYj24G43/OqlrTtg==}
+  '@minus-check/components@0.0.8':
+    resolution: {integrity: sha512-yOIh4p9rKA4FZuA9T2HasIHGcVe/UYpCGoVcMOqgwAmKwJEMpjgUwGYBhSCGPVvwgmj9yHGf4Nt7R4yTDxwRPw==}
+    peerDependencies:
+      react: ^18.0.0
+      react-dom: ^18.0.0
 
-  '@minus-check/styles@0.0.6':
-    resolution: {integrity: sha512-3/SsLsEXvPe23wS8+3ScUcB9D8BRKlIYxbVf+p0JREQNaOddyWeMYCOViF2S6daeJk3HJ4htHMyMbqQVvjGixQ==}
+  '@minus-check/styles@0.0.8':
+    resolution: {integrity: sha512-RCwrP2TrG05YS8dpVTfFDfLKy7R6vH873Q54YQnXj1m+ROmp/Ovs6VcJ0+Cz8cieKY8OemCiigSSC0nyD8l14w==}
 
-  '@minus-check/types@0.0.6':
-    resolution: {integrity: sha512-g9JHNq2Y7t5sJUPGGs94x6vdnC3xaiX3jAUAIaknAOSv5aAlfE70Yq/iBwzqqQ4HzPuFeStEwmNcrHrV1M7iUQ==}
+  '@minus-check/types@0.0.8':
+    resolution: {integrity: sha512-GzkjOsZbmC8t7CTTa3USO+z0jrfpVgB4mUR+JlO2BxpFuzVZW7i7uVwBmUysYUmqHv2epqJOYrwCPR/KRHCMnw==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2337,13 +2352,15 @@ snapshots:
 
   '@microsoft/tsdoc@0.15.1': {}
 
-  '@minus-check/components@0.0.6':
+  '@minus-check/components@0.0.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@minus-check/types': 0.0.6
+      '@minus-check/types': 0.0.8
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  '@minus-check/styles@0.0.6': {}
+  '@minus-check/styles@0.0.8': {}
 
-  '@minus-check/types@0.0.6': {}
+  '@minus-check/types@0.0.8': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
