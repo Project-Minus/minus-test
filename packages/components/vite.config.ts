@@ -21,5 +21,5 @@ export default defineConfig({
     //path package가 import.meta가 아닌 process로 접근하고 있어서 선언해서 막아줌
     "process.env": {},
   },
-  plugins: [dts()],
+  plugins: [dts({ outDir: "dist", insertTypesEntry: true })],
 });

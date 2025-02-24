@@ -1,6 +1,6 @@
 {
   "name": "@minus-check/core",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -17,9 +17,9 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@minus-check/styles": "0.0.4",
-    "@minus-check/types": "0.0.4",
-    "@minus-check/components": "0.0.4"
+    "@minus-check/styles": "0.0.5",
+    "@minus-check/types": "0.0.5",
+    "@minus-check/components": "0.0.5"
   },
     "publishConfig":{
     "access": "public"
