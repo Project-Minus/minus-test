@@ -1,10 +1,10 @@
 {
   "name": "minus-check",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "minus-ui toolkit test!",
-  "private":true,
+  "private": true,
   "type": "module",
-   "workspaces": [
+  "workspaces": [
     "packages/*"
   ],
   "exports": {
