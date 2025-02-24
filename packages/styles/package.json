@@ -1,0 +1,19 @@
+{
+  "name": "@minus-test/styles",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "vite build"
+  },
+    "publishConfig":{
+    "access": "public"
+  }
+}

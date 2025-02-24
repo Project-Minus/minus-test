@@ -1,0 +1,21 @@
+{
+  "name": "@minus-test/types",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "type": "module",
+  "files": ["dist"],
+  "scripts": {
+    "build": "vite build"
+  },
+  "publishConfig":{
+    "access": "public"
+  }
+}

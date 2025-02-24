@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
-    "module": "ES2015",
+    "target": "ESNext",
+    "module": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,8 +18,14 @@
     "declaration": true,
     "emitDeclarationOnly":false,
     "outDir": "dist",
-    "declarationDir": "dist/types"
+    "declarationDir": "dist/types",
+    "baseUrl": ".",
+    "paths": {
+      "@minus-test/components": ["packages/components/src"],
+      "@minus-test/styles": ["packages/styles/src"],
+      "@minus-test/types": ["packages/types/src"],
+      "@minus-test/core": ["packages/core/src"]
+    }
   },
-  "include": ["src/lib"]
 }
 

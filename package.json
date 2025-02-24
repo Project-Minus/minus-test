@@ -1,26 +1,39 @@
 {
   "name": "minus-test",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "minus-ui toolkit test!",
+  "private":true,
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+   "workspaces": [
+    "packages/*"
+  ],
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
-    }
+    ".": "./dist/index.js"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "retry": "pnpm uninstall dist && rm ../dist"
+    "clean:dist": "pnpm -r exec rm -rf dist",
+    "clean:modules": "pnpm -r exec rm -rf node_modules",
+    "clean:all": "pnpm -r exec rm -rf node_modules && pnpm -r exec rm -rf dist",
+    "clean": "rm -rf node_modules pnpm-lock.yaml && pnpm store prune",
+    "build": "pnpm -r run build",
+    "build:type": "pnpm --filter @minus-test/types run build",
+    "build:component": "pnpm --filter @minus-test/components run build",
+    "build:styles": "pnpm --filter @minus-test/styles run build",
+    "build:core": "pnpm --filter @minus-test/core run build",
+    "dev:component": "pnpm --filter @minus-test/components run dev",
+    "dev:styles": "pnpm --filter @minus-test/styles run dev",
+    "dev:type": "pnpm --filter @minus-test/types run dev",
+    "dev:core": "pnpm --filter @minus-test/core run dev",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r run lint",
+    "publish:component": "pnpm --filter @minus-test/components publish --access public",
+    "publish:styles": "pnpm --filter @minus-test/styles publish --access public",
+    "publish:type": "pnpm --filter @minus-test/type publish --access public",
+    "publish:core": "pnpm --filter @minus-test/core publish --access public",
+    "publish:all": "pnpm run build && pnpm -r publish --access public"
   },
   "dependencies": {
     "react": "^18.3.1",
