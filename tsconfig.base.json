@@ -21,10 +21,10 @@
     "declarationDir": "dist/types",
     "baseUrl": ".",
     "paths": {
-      "@minus-test/components": ["packages/components/src"],
-      "@minus-test/styles": ["packages/styles/src"],
-      "@minus-test/types": ["packages/types/src"],
-      "@minus-test/core": ["packages/core/src"]
+      "@minus-check/components": ["packages/components/src"],
+      "@minus-check/styles": ["packages/styles/src"],
+      "@minus-check/types": ["packages/types/src"],
+      "@minus-check/core": ["packages/core/src"]
     }
   },
 }

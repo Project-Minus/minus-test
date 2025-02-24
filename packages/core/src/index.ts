@@ -1,5 +1,5 @@
-import "@minus-test/styles";
+import "@minus-check/styles";
 
-export * from "@minus-test/types";
-export * from "@minus-test/styles";
-export * from "@minus-test/components";
+export * from "@minus-check/types";
+export * from "@minus-check/styles";
+export * from "@minus-check/components";

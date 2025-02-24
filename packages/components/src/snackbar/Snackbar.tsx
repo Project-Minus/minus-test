@@ -15,7 +15,7 @@ import {
   AiFillCheckCircle,
   AiOutlineClose,
 } from "react-icons/ai";
-import { SnackbarConfigType } from "@minus-test/types";
+import { SnackbarConfigType } from "@minus-check/types";
 import { convertCloseTime } from "./utils";
 import SnackbarWrapper from "./SnackbarWrapper";
 

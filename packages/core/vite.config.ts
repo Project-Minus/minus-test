@@ -13,9 +13,9 @@ export default defineConfig({
       external: [
         "react",
         "react-dom",
-        "@minus-test/components",
-        "@minus-test/styles",
-        "@minus-test/types",
+        "@minus-check/components",
+        "@minus-check/styles",
+        "@minus-check/types",
       ],
     },
     emptyOutDir: false,

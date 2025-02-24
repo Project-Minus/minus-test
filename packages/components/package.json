@@ -1,6 +1,6 @@
 {
-  "name": "@minus-test/components",
-  "version": "1.0.0",
+  "name": "@minus-check/components",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -16,7 +16,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@minus-test/types": "workspace:^"
+    "@minus-check/types": "workspace:^"
   },
     "publishConfig":{
     "access": "public"
