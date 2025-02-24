@@ -1,6 +1,6 @@
 {
   "name": "@minus-check/components",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -15,8 +15,12 @@
   "scripts": {
     "build": "vite build"
   },
+    "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
   "dependencies": {
-    "@minus-check/types": "0.0.7"
+    "@minus-check/types": "0.0.8"
   },
     "publishConfig":{
     "access": "public"
