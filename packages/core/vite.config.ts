@@ -20,5 +20,18 @@ export default defineConfig({
     },
     emptyOutDir: false,
   },
-  plugins: [dts({ outDir: "dist", insertTypesEntry: true })],
+  plugins: [
+    dts({
+      outDir: "dist",
+      insertTypesEntry: true,
+      compilerOptions: {
+        baseUrl: "",
+        paths: {
+          "@minus-check/components": ["@minus-check/components"],
+          "@minus-check/styles": ["@minus-check/styles"],
+          "@minus-check/types": ["@minus-check/types"],
+        },
+      },
+    }),
+  ],
 });

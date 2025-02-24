@@ -82,20 +82,20 @@ importers:
   packages/components:
     dependencies:
       '@minus-check/types':
-        specifier: workspace:^
-        version: link:../types
+        specifier: 0.0.6
+        version: 0.0.6
 
   packages/core:
     dependencies:
       '@minus-check/components':
-        specifier: workspace:^
-        version: link:../components
+        specifier: 0.0.6
+        version: 0.0.6
       '@minus-check/styles':
-        specifier: workspace:^
-        version: link:../styles
+        specifier: 0.0.6
+        version: 0.0.6
       '@minus-check/types':
-        specifier: workspace:^
-        version: link:../types
+        specifier: 0.0.6
+        version: 0.0.6
 
   packages/styles: {}
 
@@ -420,6 +420,15 @@ packages:
 
   '@microsoft/tsdoc@0.15.1':
     resolution: {integrity: sha512-4aErSrCR/On/e5G2hDP0wjooqDdauzEbIq8hIkIe5pXV0rtWJZvdCEKL0ykZxex+IxIwBp0eGeV48hQN07dXtw==}
+
+  '@minus-check/components@0.0.6':
+    resolution: {integrity: sha512-s043jTIr7/+i+lqv+assxWFdqL7cKbvbdcPc8hvY65fIUBW/WT955vHF8+r+65N9iCfPEOAYj24G43/OqlrTtg==}
+
+  '@minus-check/styles@0.0.6':
+    resolution: {integrity: sha512-3/SsLsEXvPe23wS8+3ScUcB9D8BRKlIYxbVf+p0JREQNaOddyWeMYCOViF2S6daeJk3HJ4htHMyMbqQVvjGixQ==}
+
+  '@minus-check/types@0.0.6':
+    resolution: {integrity: sha512-g9JHNq2Y7t5sJUPGGs94x6vdnC3xaiX3jAUAIaknAOSv5aAlfE70Yq/iBwzqqQ4HzPuFeStEwmNcrHrV1M7iUQ==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2327,6 +2336,14 @@ snapshots:
       resolve: 1.22.10
 
   '@microsoft/tsdoc@0.15.1': {}
+
+  '@minus-check/components@0.0.6':
+    dependencies:
+      '@minus-check/types': 0.0.6
+
+  '@minus-check/styles@0.0.6': {}
+
+  '@minus-check/types@0.0.6': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
