@@ -23,7 +23,7 @@ interface Props extends SnackbarConfigType {
   index: number;
   idNum: number;
 }
-export default function Snackbar(props: Props) {
+export function Snackbar(props: Props) {
   const {
     index,
     idNum,

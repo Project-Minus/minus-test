@@ -2,7 +2,7 @@ import { MouseEvent, useCallback, useEffect, useRef, useState } from "react";
 import { TooltipPropsType } from "@minus-check/types";
 import TooltipBubble from "./TooltipBubble";
 
-export default function Tooltip(props: TooltipPropsType) {
+export function Tooltip(props: TooltipPropsType) {
   const {
     contents,
     bubbleContents,

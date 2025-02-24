@@ -1,2 +1,2 @@
-export { default as Tooltip } from "./tooltip/Tooltip";
-export { default as Snackbar } from "./snackbar/Snackbar";
+export { Tooltip } from "./tooltip/Tooltip";
+export { Snackbar } from "./snackbar/Snackbar";
