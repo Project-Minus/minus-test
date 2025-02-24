@@ -1,7 +1,4 @@
-import snackbarStyle from "./snackbar.css";
-import tooltipStyle from "./tooltip.css";
+import "./snackbar.css";
+import "./tooltip.css";
 
-export const styles ={
-  snackbar: snackbarStyle,
-  tooltip:tooltipStyle
-}
+export {};

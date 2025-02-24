@@ -1,8 +1,8 @@
 {
   "name": "@minus-check/styles",
-  "version": "0.0.9",
+  "version": "0.1.6",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/index.css",
   "exports": {
     ".": {
       "import": "./dist/index.js",

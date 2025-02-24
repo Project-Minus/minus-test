@@ -1,6 +1,6 @@
 {
   "name": "@minus-check/core",
-  "version": "0.0.9",
+  "version": "0.1.6",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -23,9 +23,9 @@
     "react-dom": "^18.0.0"
   },
   "dependencies": {
-    "@minus-check/styles": "0.0.9",
-    "@minus-check/types": "0.0.9",
-    "@minus-check/components": "0.0.9"
+    "@minus-check/styles": "0.1.6",
+    "@minus-check/types": "0.1.6",
+    "@minus-check/components": "0.1.6"
   },
   "publishConfig": {
     "access": "public"
