@@ -1,13 +1,15 @@
 {
   "name": "@minus-check/styles",
-  "version": "0.1.6",
+  "version": "0.4.3",
   "type": "module",
   "main": "dist/index.css",
   "exports": {
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    }
+    },
+  "./snackbar": "./dist/snackbar.css",
+  "./tooltip": "./dist/tooltip.css"
   },
   "files": [
     "dist"

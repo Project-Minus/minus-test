@@ -1,6 +1,6 @@
 {
   "name": "@minus-check/core",
-  "version": "0.1.6",
+  "version": "0.4.3",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -8,9 +8,20 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs",
-      "styles": "./dist/index.css"
-    }
+      "require": "./dist/index.umd.cjs"
+    },
+ "./snackbar": {
+    "import": "./dist/snackbar.css",
+    "types": "./dist/css.d.ts"
+  },
+  "./tooltip": {
+    "import": "./dist/tooltip.css",
+    "types": "./dist/css.d.ts"
+  },
+  "./index.css": {
+    "import": "./dist/index.css",
+    "types": "./dist/css.d.ts"
+  }
   },
   "files": [
     "dist"
@@ -23,9 +34,9 @@
     "react-dom": "^18.0.0"
   },
   "dependencies": {
-    "@minus-check/styles": "0.1.6",
-    "@minus-check/types": "0.1.6",
-    "@minus-check/components": "0.1.6"
+    "@minus-check/styles": "0.4.3",
+    "@minus-check/types": "0.4.3",
+    "@minus-check/components": "0.4.3"
   },
   "publishConfig": {
     "access": "public"
